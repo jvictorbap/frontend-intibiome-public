@@ -24,3 +24,7 @@ body {
 .shadow-product {
   box-shadow: 0px 3px 16px #00000014;
 }
+
+.teste {
+  position: absolute;
+}

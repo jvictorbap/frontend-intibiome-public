@@ -18,6 +18,9 @@ function Products() {
         setSlider(false);
       }
     });
+    if (window.innerWidth < 768) {
+      setSlider(true);
+    }
   }, [])
 
   function threeProducts() {

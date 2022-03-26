@@ -4,8 +4,7 @@ import bannerDesktop from '../images/banner-hero@2x.png';
 
 function Banner(props) {
 
-  const [banner, setBanner] = React.useState(bannerDesktop);
-
+  const [banner, setBanner] = React.useState();
 
   React.useEffect(() => {
     window.addEventListener('resize', () => {
@@ -15,6 +14,9 @@ function Banner(props) {
         setBanner(bannerDesktop);
       }
     });
+    if (window.innerWidth < 640) {
+      setBanner(bannerMobile);
+    }
   }, [])
 
   return (

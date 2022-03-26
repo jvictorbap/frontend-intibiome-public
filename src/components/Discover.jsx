@@ -17,6 +17,9 @@ function Discover() {
         setSlider(false);
       }
     });
+    if (window.innerWidth < 768) {
+      setSlider(true);
+    }
   }, [])
 
   function threeProducts() {

@@ -67,7 +67,7 @@
 
 ### 2 - Fazer o componente `banner`.
 
-### 3 - Fazer o componente de `seção`.
+### 3 - Fazer o componente de `section`.
 
 ### 4 - Fazer o componente de `sliders`.
 

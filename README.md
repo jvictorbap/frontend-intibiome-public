@@ -11,8 +11,6 @@
 - [Instruções para entregar seu projeto:](#instruções-de-entrega)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-- [Como desenvolver](#como-desenvolver)
-  - [Linter](#linter)
 - [Requisitos do projeto](#requisitos-do-projeto)
 
 ---

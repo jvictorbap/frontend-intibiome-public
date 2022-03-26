@@ -5,6 +5,7 @@ import Section1 from './components/Section1';
 import Section2 from './components/Section2';
 import Products from './components/Products';
 import bannerDown from './images/banner-intibiome-05.png';
+import Discover from './components/Discover';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Section2 />
       <Products />
       <Banner banner={bannerDown} mt="mt-16" />
+      <Discover />
     </div>
   );
 }

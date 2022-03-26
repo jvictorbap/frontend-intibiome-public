@@ -6,6 +6,7 @@
 
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+  - [Como iniciar o projeto localmente?](#como-iniciar-o-projeto-localmente)
   - [Desenvolvimento](#desenvolvimento)
   - [Data de entrega](#data-de-entrega)
 - [Instruções para entregar seu projeto:](#instruções-de-entrega)
@@ -20,6 +21,20 @@
 ## O que deverá ser desenvolvido
 
 - Intibiome LP Clone
+
+---
+
+### Como iniciar o projeto localmente?
+
+- Faça o clone do projeto no seu computador
+
+- Instale as dependências do projeto
+
+- Execute o comando `npm install`
+
+- Execute o comando `npm start`
+
+- Aperte F5 para atualizar a página
 
 ---
 

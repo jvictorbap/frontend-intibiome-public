@@ -54,7 +54,7 @@ function Discover() {
   }
 
   return (
-    <div className='xl:w-[1134px] mx-auto'>
+    <div className='xl:w-[1134px] mx-auto' data-aos="zoom-in" data-aos-duration="2000">
       <div className='flex justify-center'>
         <h1 className='text-blue font-bold text-[31px] tracking-[.4px] mt-8 text-center'>keep up to date with our discoveries</h1>
       </div>

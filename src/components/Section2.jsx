@@ -2,7 +2,7 @@ import React from 'react'
 
 function Section2() {
   return (
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <div className='flex justify-center'>
         <h1 className='text-blue font-bold text-[31px] tracking-[.78px] mt-10 text-center sm:text-[39px] md:w-[744px] sm:h-[96px]'>whatever your age. whatever your lifestyle. whatever your interests.</h1>
       </div>

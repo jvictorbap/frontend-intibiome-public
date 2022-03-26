@@ -4,7 +4,7 @@ import bannerDesktop from '../images/Asset 22@2x.png';
 
 function Banner(props) {
 
-  const [banner, setBanner] = React.useState();
+  const [banner, setBanner] = React.useState(bannerDesktop);
 
 
   React.useEffect(() => {
@@ -21,7 +21,7 @@ function Banner(props) {
   }, [])
 
   return (
-    <div className=''>
+    <div className='' data-aos="zoom-in" data-aos-duration="2000">
       <img src={banner} className={`w-full h-auto ${props.mt}`} alt="" />
     </div>
   )

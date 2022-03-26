@@ -8,7 +8,7 @@ import HeaderNavbarUl from './HeaderNavbarUl'
 function Header() {
   return (
     <header className=''>
-      <nav className='flex w-full justify-around items-center shadow-md'>
+      <nav className='flex w-full justify-around lg:justify-evenly items-center shadow-md'>
         <ul className='md:invisible'>
           <li>
             <a href="">

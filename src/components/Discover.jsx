@@ -26,7 +26,7 @@ function Discover() {
           <div>
             <img src={mulher} className='rounded-t-xl' alt="" />
           </div>
-          <div className='w-full h-[100px] p-1 shadow-xl'>
+          <div className='w-full h-[100px] p-1 shadow-xl rounded-2xl'>
             <h3 className='text-darkGray text-[20px] tracking-[.4px] mt-2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           </div>
         </div>
@@ -34,7 +34,7 @@ function Discover() {
           <div>
             <img src={idosa} className='rounded-t-xl' alt="" />
           </div>
-          <div className='w-full h-[100px] p-1 shadow-xl'>
+          <div className='w-full h-[100px] p-1 shadow-xl rounded-2xl'>
             <h3 className='text-darkGray text-[20px] tracking-[.4px] mt-2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           </div>
         </div>
@@ -42,7 +42,7 @@ function Discover() {
           <div>
             <img src={agua} className='rounded-t-xl' alt="" />
           </div>
-          <div className='w-full h-[100px] p-1 shadow-xl'>
+          <div className='w-full h-[100px] p-1 shadow-xl rounded-2xl'>
             <h3 className='text-darkGray text-[20px] tracking-[.4px] mt-2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           </div>
         </div>
@@ -51,7 +51,7 @@ function Discover() {
   }
 
   return (
-    <div className='lg:w-[1134px] mx-auto'>
+    <div className='xl:w-[1134px] mx-auto'>
       <div className='flex justify-center'>
         <h1 className='text-blue font-bold text-[31px] tracking-[.4px] mt-8 text-center'>keep up to date with our discoveries</h1>
       </div>

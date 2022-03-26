@@ -20,3 +20,7 @@
 body {
   font-family: 'Trebuchet MS', sans-serif;
 }
+
+.shadow-product {
+  box-shadow: 0px 3px 16px #00000014;
+}

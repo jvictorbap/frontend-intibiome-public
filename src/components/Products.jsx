@@ -22,7 +22,7 @@ function Products() {
 
   function threeProducts() {
     return (
-      <div className='flex gap-4 justify-center mx-auto mt-16'>
+      <div className='flex gap-8 justify-center mx-auto mt-16'>
         <div className='flex flex-col shadow-product justify-center items-center w-1/3'>
           <div>
             <img src={imageMaskBlue} className='h-[351px] rounded-xl' alt="" />
@@ -61,9 +61,9 @@ function Products() {
   }
 
   return (
-    <div className='sm:max-w-[1134px] mx-auto'>
+    <div className='xl:max-w-[1134px] mx-auto'>
       <div className='flex justify-center'>
-        <h1 className='text-blue font-bold text-[31px] tracking-[.78px] mt-8 text-center'>our products</h1>
+        <h1 className='text-blue font-bold text-[31px] tracking-[.78px] mt-8 text-center sm:text-[39px]'>our products</h1>
       </div>
       {/* CARD */}
       {slider ? <SliderUp /> : threeProducts()}

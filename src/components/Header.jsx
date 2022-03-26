@@ -3,6 +3,7 @@ import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import logo from '../images/Module 1 - Header 970x60025.png'
 import lupa from '../images/ic.search.svg'
+import HeaderNavbarUl from './HeaderNavbarUl'
 
 function Header() {
   return (
@@ -18,7 +19,7 @@ function Header() {
         <ul>
           <li>
             <a href="">
-              <img src={logo} className="w-[143px] h-[58px]" alt="" />
+              <img src={logo} className="w-[143px] h-[58px] md:w-[195px] md:h-[79px]" alt="" />
             </a>
           </li>
         </ul>
@@ -30,6 +31,14 @@ function Header() {
           </li>
         </ul>
       </nav>
+      <div className='h-[49px] w-full bg-blue items-center hidden md:flex justify-center'>
+        <nav className='flex justify-center h-full items-center'>
+          <HeaderNavbarUl text="about us" icone='true' />
+          <HeaderNavbarUl text="our products" icone='true' />
+          <HeaderNavbarUl text="intimate health" icone='true' />
+          <HeaderNavbarUl text="contact us" />
+        </nav>
+      </div>
     </header>
   )
 }

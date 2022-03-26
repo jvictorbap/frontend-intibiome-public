@@ -16,8 +16,9 @@ function Products() {
         <Splide
           options={
             {
+              interval: 3000,
               rewind: true,
-              // autoplay: true,
+              autoplay: true,
               arrows: false,
               pagination: false,
               type: 'slide',

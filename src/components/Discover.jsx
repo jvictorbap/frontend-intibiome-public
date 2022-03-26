@@ -16,15 +16,16 @@ function Discover() {
         <Splide
           options={
             {
+              interval: 3000,
               rewind: true,
-              // autoplay: true,
+              autoplay: true,
               arrows: false,
               pagination: false,
               type: 'slide',
               perPage: 1,
               drag: true,
               gap: '0.5rem',
-              width: '1068px',
+              width: '100%',
               padding: '5%',
               cover: true,
             }
@@ -64,7 +65,6 @@ function Discover() {
       <button className='bg-blue w-[93%] flex justify-center mt-12 rounded-md h-[64px] items-center text-[20px] tracking-[.4px] mx-auto'>
         <h1 className='text-white'>see more</h1>
       </button>
-
     </div>
   )
 }

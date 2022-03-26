@@ -6,6 +6,7 @@ import Section2 from './components/Section2';
 import Products from './components/Products';
 import bannerDown from './images/banner-intibiome-05.png';
 import Discover from './components/Discover';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Products />
       <Banner banner={bannerDown} mt="mt-16" />
       <Discover />
+      <Footer />
     </div>
   );
 }

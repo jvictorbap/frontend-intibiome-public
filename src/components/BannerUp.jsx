@@ -4,7 +4,7 @@ import bannerDesktop from '../images/banner-hero@2x.png';
 
 function Banner(props) {
 
-  const [banner, setBanner] = React.useState(bannerMobile);
+  const [banner, setBanner] = React.useState(bannerDesktop);
 
 
   React.useEffect(() => {

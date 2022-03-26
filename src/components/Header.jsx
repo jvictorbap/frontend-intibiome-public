@@ -8,7 +8,7 @@ function Header() {
   return (
     <header className=''>
       <nav className='flex w-full justify-around items-center shadow-md'>
-        <ul>
+        <ul className='md:invisible'>
           <li>
             <a href="">
               <AiOutlineMenu />

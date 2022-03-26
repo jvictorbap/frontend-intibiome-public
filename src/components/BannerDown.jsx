@@ -15,10 +15,13 @@ function Banner(props) {
         setBanner(bannerDesktop);
       }
     });
+    if (window.innerWidth < 640) {
+      setBanner(bannerMobile);
+    }
   }, [])
 
   return (
-    <div className=''>
+    <div className='' data-aos="zoom-in" data-aos-duration="2000">
       <img src={banner} className={`w-full h-auto ${props.mt}`} alt="" />
     </div>
   )

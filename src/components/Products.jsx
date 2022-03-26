@@ -18,6 +18,9 @@ function Products() {
         setSlider(false);
       }
     });
+    if (window.innerWidth < 768) {
+      setSlider(true);
+    }
   }, [])
 
   function threeProducts() {
@@ -61,7 +64,7 @@ function Products() {
   }
 
   return (
-    <div className='xl:max-w-[1134px] mx-auto mt-16'>
+    <div className='xl:max-w-[1134px] mx-auto mt-16' data-aos="zoom-in" data-aos-duration="2000">
       <div className='flex justify-center'>
         <h1 className='text-blue font-bold text-[31px] tracking-[.78px] mt-8 text-center sm:text-[39px]'>our products</h1>
       </div>

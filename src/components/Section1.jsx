@@ -3,7 +3,7 @@ import banner from '../images/icons@2x.png'
 
 function Section1() {
   return (
-    <div>
+    <div data-aos="zoom-in" data-aos-duration="2000">
       <div className='flex justify-center'>
         <h1 className='text-blue font-bold text-[31px] tracking-[.78px] mt-8 text-center sm:text-[39px] sm:w-[356px] sm:h-[56px]'>we’re here to help</h1>
       </div>

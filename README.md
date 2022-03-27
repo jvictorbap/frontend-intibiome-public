@@ -34,8 +34,6 @@
 
 - Execute o comando `npm start`
 
-- Aperte F5 para atualizar a página
-
 ---
 
 ## Desenvolvimento

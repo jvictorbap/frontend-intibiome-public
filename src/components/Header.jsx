@@ -4,7 +4,6 @@ import React from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
 import logo from '../images/Module 1 - Header 970x60025.png'
 import lupa from '../images/ic.search.svg'
-import HeaderNavbarUl from './HeaderNavbarUl'
 import { RiCloseLine } from 'react-icons/ri'
 import { IoIosArrowDown } from 'react-icons/io'
 
@@ -105,14 +104,21 @@ function Header() {
     )
   }
 
-  function aboutHandler() {
-    setAboutOpen(!aboutOpen)
+  function aboutHandler(param) {
+    setIntimateOpen(false)
+    setProductsOpen(false)
+    if (!aboutOpen && param) {
+      setAboutOpen(param)
+    } else if (aboutOpen && !param) {
+      setAboutOpen(param)
+    }
   }
 
   function aboutRender() {
     return (
-      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray'>
-        <nav className='h-[49px] flex'>
+      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray'
+        onMouseLeave={() => aboutHandler(false)}>
+        <nav className='h-[49px] flex' onMouseOver={() => aboutHandler(true)} >
           <ul>
             <button className='w-[181px] h-[47px]'>
               <li>
@@ -132,13 +138,19 @@ function Header() {
     )
   }
 
-  function productHandler() {
-    setProductsOpen(!productsOpen)
+  function productHandler(param) {
+    setMenuOpen(false)
+    setIntimateOpen(false)
+    if (!productsOpen && param) {
+      setProductsOpen(param)
+    } else if (productsOpen && !param) {
+      setProductsOpen(param)
+    }
   }
 
   function productRender() {
     return (
-      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray'>
+      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray' onMouseLeave={() => productHandler(false)}>
         <nav className='h-[49px] flex'>
           <ul>
             <button className='w-[181px] h-[47px]'>
@@ -173,13 +185,20 @@ function Header() {
     )
   }
 
-  function intimateHandler() {
-    setIntimateOpen(!intimateOpen)
+  function intimateHandler(param) {
+    setAboutOpen(false)
+    setProductsOpen(false)
+    if (!intimateOpen && param) {
+      setIntimateOpen(param)
+    } else if (intimateOpen && !param) {
+      setIntimateOpen(param)
+    }
   }
 
   function intimateRender() {
     return (
-      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray'>
+      <div className='absolute z-10 flex w-full h-[49px] justify-center bg-brandGray'
+        onMouseLeave={() => intimateHandler(false)}>
         <nav className='h-[49px] flex'>
           <ul>
             <button className='w-[181px] h-[47px]'>
@@ -216,7 +235,7 @@ function Header() {
 
   return (
     <header className=''>
-      <nav nav className='flex w-full justify-around lg:justify-evenly items-center shadow-md' >
+      <nav nav className='flex w-full justify-around lg:justify-evenly items-center shadow-md'>
         <ul className='md:invisible'>
           <li>
             <button id='hamburguer' onClick={() => handleClick()}>
@@ -242,19 +261,19 @@ function Header() {
       {menuOpen ? hamburguer() : null}
       <div id='navbar' className='h-[49px] w-full bg-blue items-center hidden md:flex justify-center'>
         <nav className='flex justify-center h-full items-center'>
-          <ul className='w-[190px] h-[48px] flex items-center'>
+          <ul className='w-[190px] h-[48px] flex items-center' onMouseEnter={() => aboutHandler(true)}>
             <li className='w-full'>
-              <a href="#0" onMouseEnter={() => aboutHandler()} onMouseOut={() => aboutHandler()} className='text-white flex items-center font-medium gap-4 justify-center text-lg '>about us <IoIosArrowDown /></a>
+              <a href="#0" className='text-white flex items-center font-medium gap-4 justify-center text-lg '>about us <IoIosArrowDown /></a>
             </li>
           </ul>
           <ul className='w-[190px] h-[48px] flex items-center'>
             <li className='w-full'>
-              <a href="#0" onMouseEnter={() => productHandler()} onMouseOut={() => productHandler()} className='text-white flex items-center font-medium gap-4 justify-center text-lg '>our products <IoIosArrowDown /></a>
+              <a href="#0" onMouseEnter={() => productHandler(true)} className='text-white flex items-center font-medium gap-4 justify-center text-lg '>our products <IoIosArrowDown /></a>
             </li>
           </ul>
           <ul id='intimate' className='w-[190px] h-[48px] flex items-center'>
             <li className='w-full'>
-              <a href="#0" onMouseEnter={() => intimateHandler()} onMouseOut={() => intimateHandler()} className='text-white flex items-center font-medium gap-4 justify-center text-lg '>intimate health <IoIosArrowDown /></a>
+              <a href="#0" onMouseEnter={() => intimateHandler(true)} className='text-white flex items-center font-medium gap-4 justify-center text-lg '>intimate health <IoIosArrowDown /></a>
             </li>
           </ul>
           <ul id='intimate' className='w-[190px] h-[48px] flex items-center'>
